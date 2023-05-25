@@ -13,6 +13,11 @@ public class DemoRestController {
     public DemoRestController(final Coach theCoach) {
         myCoach = theCoach;
     }
+    
+    // setter injection
+    // public void setCoach(Coach theCoach) {
+    //    myCoach = theCoach;
+    // }
 
     @GetMapping("dailyworkout")
     public String getDailyWorkout() {
